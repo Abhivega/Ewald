@@ -3,9 +3,9 @@ A script to obtain most favored configurations at various ionic concentrations o
 
 ## Requirements
 
-1.Pymatgen ( https://pymatgen.org )
-2.Pandas
-3.Numpy
+1.Pymatgen ( https://pymatgen.org )  
+2.Pandas  
+3.Numpy  
  
 ## Usage
 
