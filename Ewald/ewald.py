@@ -31,9 +31,9 @@ try:
         print(f"{file} with {len} {ion} has initiated.")
         for i in np.arange(0,len+1,1):
             trans = PartialRemoveSpecieTransformation(ion,i/len)
-            substructures = trans.apply_transformation(structure,return_ranked_list=1)   # change this number to get multiple configurations with higher ewrld summation.
+            substructures = trans.apply_transformation(structure,return_ranked_list=1)   # change this number to get multiple configurations with higher ewald summation.
             substructures[0]['structure'].to(fmt='poscar', filename=str('POSCAR'+str(int(i))))
-            data.append([i,(1-i/len),substructures[0]['energy'],substructures[0]['energy']/fact])  # the last term is the normatised ewrld summation with number of formula units
+            data.append([i,(1-i/len),substructures[0]['energy'],substructures[0]['energy']/fact])  # the last term is the normatised ewald summation with number of formula units
 
         df=pd.DataFrame(data,columns=['file','composition','Ewald_energy','Norm ( Ewald_energy / '+str(fact)+')' ])
 
