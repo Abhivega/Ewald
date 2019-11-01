@@ -13,7 +13,7 @@ python ewald.py {cif file name} { working ion with its oxidation state}
 
 ## Example
 
-python ewald.py 7_Na6MnO4.cif Na+  
+python ewald.py Na6MnO4.cif Na+  
 
 ## Output
 
